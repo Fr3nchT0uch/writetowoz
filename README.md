@@ -7,8 +7,7 @@ v0.30
 
 **Code:** GROUiK (FRENCH TOUCH) / Thomas Harte
 
-
-MIT License
+GNU GENERAL PUBLIC LICENSE Version 3
 <br/>
 <br/>
 ## Usage:
