@@ -2,8 +2,6 @@
 
 A command-line tool to directly write binary to a WOZ image heavely based on DSK2WOZ (c) 2018 Thomas Harte.
 
-v0.30
-[Custom 32 sectors/128 bytes with custom GAPS]
 
 **Code:** GROUiK (FRENCH TOUCH) / Thomas Harte
 
@@ -22,7 +20,8 @@ W2W.exe s d track sector image.woz binary.b [-v]
 - binary.b name
 - -v verbose mode (optional)
 
-warning: the first six parameters are mandatory! 
+warning: the first six parameters are mandatory!  
+note: current custom format = 32 sectors x 128 bytes with custom GAPS
 <br/>
 <br/>
 ## Building Instructions:
