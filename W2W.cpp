@@ -6,7 +6,7 @@ A command-line tool to directly write binary to a WOZ image.
 Copyright (c) 2021 - GROUiK/FRENCH TOUCH / Thomas Harte
 MIT License
 
-v0.30 - Custom 32 sectors/128 bytes - with GAPS custom (GAP1 = 8 / GAP2 = 7 / GAP3 = 8)
+v0.31 - Custom 32 sectors/128 bytes - with GAPS custom (GAP1 = 8 / GAP2 = 7 / GAP3 = 8)
 
 Usage:
 W2W s d track sector image.woz binary.b [-v]
@@ -107,7 +107,7 @@ int main(int argc, char* argv[]) {
 	else
 		nb_sectors = (binary_image_size / sector_size);
 
-	unsigned char* binary = (unsigned char*)malloc(nb_sectors * sector_size);	// allocate memory
+	unsigned char* binary = (unsigned char*)calloc(nb_sectors * sector_size, sizeof (unsigned char));	// allocate memory
 	if (binary) {
 		const size_t binary_bytes_read = fread(binary, 1, binary_image_size, binary_file);
 		fclose(binary_file);
